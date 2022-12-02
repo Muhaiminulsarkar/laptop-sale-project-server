@@ -100,17 +100,6 @@ async function run() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
     //payment done
     app.patch("/payments/done", async (req, res) => {
       const { productID, bookingID } = req.body;
@@ -356,7 +345,7 @@ run().catch(console.log);
 
 //Basic server start
 app.get("/", async (req, res) => {
-  res.send("mobile buy sell server is running");
+  res.send("Laptop buy sell server is running");
 });
 
 app.listen(port, () => console.log(`mobile buy sell running on ${port}`));
