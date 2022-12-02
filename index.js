@@ -345,7 +345,7 @@ run().catch(console.log);
 
 //Basic server start
 app.get("/", async (req, res) => {
-  res.send("Laptop  sell server is running");
+  res.send("Laptop Hut sell server is running");
 });
 
 app.listen(port, () => console.log(`mobile buy sell running on ${port}`));
