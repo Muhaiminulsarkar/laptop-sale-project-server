@@ -311,7 +311,7 @@ app.get("/", async (req, res) => {
   res.send("Laptop Hut server is running");
 });
 
-app.listen(port, () => console.log(`Laptop Hut sell running on ${port}`));
+app.listen(port, () => console.log(`Laptop Hut running on ${port}`));
 
 
 
