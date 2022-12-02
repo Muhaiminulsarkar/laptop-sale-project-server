@@ -16,46 +16,9 @@ app.use(express.json());
 
 /* --- MongoDB ---- */
 
-// const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.dhw1j4v.mongodb.net/?retryWrites=true&w=majority`;
-// const client = new MongoClient(uri, {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-//   serverApi: ServerApiVersion.v1,
-// });
-
-
-
-
-// Vxs4XtmC5VlVsJhd
-
-// usedlaptop
-
-
-
-// const uri = "mongodb+srv://${process.env.DB_USER}:Vxs4XtmC5VlVsJhd@cluster0.vybc5wc.mongodb.net/?retryWrites=true&w=majority";
-// const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
-
-
-
 
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.vybc5wc.mongodb.net/?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
-
-
-// client.connect(err => {
-//   const collection = client.db("test").collection("devices");
-//   // perform actions on the collection object
-//   client.close();
-// });
-
-
-
-
-
-
-
-
-
 
 
 
@@ -348,22 +311,7 @@ app.get("/", async (req, res) => {
   res.send("Laptop Hut server is running");
 });
 
-app.listen(port, () => console.log(`Laptop buy sell running on ${port}`));
+app.listen(port, () => console.log(`Laptop Hut sell running on ${port}`));
 
 
 
-
-// {
-//   "dependencies": {
-//     "cors": "^2.8.5",
-//     "dotenv": "^16.0.3",
-//     "express": "^4.18.2",
-//     "jsonwebtoken": "^8.5.1",
-//     "mongodb": "^4.12.1"
-//   }
-// }
-
-
-
-// dbusedlaptop
-// RN3pNcC5fZi8dDTu
