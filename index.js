@@ -168,7 +168,7 @@ async function run() {
       const checkDuplicate = await productsCollection.find(query).toArray();
 
       if (checkDuplicate.length) {
-        const message = `You already booked ${product.productName}`;
+        const message = `You already booked.. ${product.productName}`;
         return res.send({ acknowledged: false, message });
       }
       const result = await productsCollection.insertOne(product);
